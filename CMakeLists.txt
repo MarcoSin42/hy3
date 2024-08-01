@@ -22,7 +22,7 @@ add_library(hy3 SHARED
 	src/SelectionHook.cpp
 )
 
-option(HY3_NO_VERSION_CHECK "Disable hyprland version check" FALSE)
+option(HY3_NO_VERSION_CHECK "Disable hyprland version check" TRUE)
 
 if (HY3_NO_VERSION_CHECK)
 	target_compile_definitions(hy3 PRIVATE -DHY3_NO_VERSION_CHECK=TRUE)
